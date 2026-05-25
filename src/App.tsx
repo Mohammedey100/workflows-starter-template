@@ -11,15 +11,19 @@ function App() {
   const workflowState = useWorkflowWebSocket(instanceId);
   const [showWorkflowDemo, setShowWorkflowDemo] = useState(false);
 
+  // لما الـ workflow يكمّل
   useEffect(() => {
     if (workflowState.workflowStatus === "completed") {
       const timer = setTimeout(() => {
         setInstanceId(null);
+        // اختيارية:
+        // setShowWorkflowDemo(false);
       }, 1500);
       return () => clearTimeout(timer);
     }
   }, [workflowState.workflowStatus]);
 
+  // لما يبدأ الـ workflow فعليًا، نوقف حالة الـ starting
   useEffect(() => {
     if (
       workflowState.workflowStatus === "running" &&
@@ -28,6 +32,13 @@ function App() {
       setIsStarting(false);
     }
   }, [workflowState.workflowStatus, workflowState.currentStep]);
+
+  // فتح الـ demo أوتوماتيك لما يبقى فيه instance
+  useEffect(() => {
+    if (instanceId && workflowState.workflowStatus !== "completed") {
+      setShowWorkflowDemo(true);
+    }
+  }, [instanceId, workflowState.workflowStatus]);
 
   const handleStartWorkflow = async () => {
     setIsStarting(true);
@@ -43,7 +54,8 @@ function App() {
 
       const data = await response.json();
       setInstanceId(data.instanceId);
-      setShowWorkflowDemo(true);
+      // ما نفتحش الـ demo هنا عشان ما يحصلش race
+      // setShowWorkflowDemo(true);
     } catch {
       alert("Failed to start workflow. Please try again.");
       setIsStarting(false);
@@ -139,7 +151,7 @@ function App() {
               </div>
             </article>
 
-            {/* Project placeholder – عدل ده لمشروع تاني فعلي عندك */}
+            {/* Project placeholder */}
             <article className="bg-white/80 dark:bg-neutral-900/80 border border-neutral-200/60 dark:border-neutral-800 rounded-xl p-5 shadow-sm">
               <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-50 mb-1">
                 Custom PHP E‑commerce Dashboard
@@ -188,11 +200,10 @@ function App() {
                 @Mohammedey100
               </a>
             </li>
-            {/* اضف LinkedIn / Email لو حابب */}
           </ul>
         </section>
 
-        {/* Workflow demo section (نفس الـ UI القديم لكن في الأسفل أو حسب showWorkflowDemo) */}
+        {/* Workflow demo section */}
         {showWorkflowDemo && (
           <section className="border-t border-neutral-200/60 dark:border-neutral-800 pt-6 pb-10">
             <div className="px-6 mb-4 flex items-center justify-between max-w-5xl mx-auto">
