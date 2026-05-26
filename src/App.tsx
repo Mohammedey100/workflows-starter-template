@@ -57,7 +57,7 @@ function App() {
       // ما نفتحش الـ demo هنا عشان ما يحصلش race
       // setShowWorkflowDemo(true);
     } catch {
-      alert("Failed to start workflow. Please try again.");
+      alert("فشل في بدء الـ workflow. من فضلك حاول مرة أخرى.");
       setIsStarting(false);
     }
   };
@@ -78,20 +78,20 @@ function App() {
             </div>
             <div className="flex flex-col">
               <h1 className="text-sm font-semibold text-neutral-800 dark:text-neutral-100">
-                Mohammed Ragab
+                محمد رجب
               </h1>
               <p className="text-xs text-neutral-500 dark:text-neutral-400">
-                Full‑Stack Web & E‑commerce Developer
+                مطور ويب ومتاجر إلكترونية
               </p>
             </div>
           </div>
 
           <nav className="flex items-center gap-4 text-xs font-medium text-neutral-600 dark:text-neutral-400">
             <a href="#projects" className="hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors">
-              Projects
+              المشاريع
             </a>
             <a href="#contact" className="hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors">
-              Contact
+              تواصل معي
             </a>
             <a
               href="https://developers.cloudflare.com/workflows"
@@ -99,7 +99,7 @@ function App() {
               rel="noopener noreferrer"
               className="hidden sm:inline-block text-xs font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors"
             >
-              Workflows Docs →
+              وثائق Workflows →
             </a>
           </nav>
         </div>
@@ -111,11 +111,11 @@ function App() {
         <section className="px-6 pt-6 pb-10 max-w-5xl mx-auto">
           <div className="mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-3">
-              Building custom e‑commerce & real‑time web apps.
+              أبني متاجر إلكترونية وتطبيقات ويب لحظية مخصصة.
             </h2>
             <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-300 max-w-2xl">
-              I’m a web developer focused on PHP, MySQL, WebRTC, and Cloudflare Workers.
-              I build tailored e‑commerce platforms, admin dashboards, and real‑time experiences.
+              مطور ويب مركز على PHP و MySQL و WebRTC و Cloudflare Workers،
+              ببني منصات تجارة إلكترونية مخصصة، لوحات تحكم، وتجارب لحظية (Real‑Time).
             </p>
           </div>
 
@@ -124,14 +124,14 @@ function App() {
             {/* Project: Workflows Starter / Essentials Store */}
             <article className="bg-white/80 dark:bg-neutral-900/80 border border-neutral-200/60 dark:border-neutral-800 rounded-xl p-5 shadow-sm">
               <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-50 mb-1">
-                Workflows Starter / Essentials Store
+                متجر إلكتروني / Workflows Starter
               </h3>
               <p className="text-xs text-neutral-600 dark:text-neutral-300 mb-3">
-                Order lifecycle workflow (validate → reserve stock → wait for payment → finalize)
-                built on Cloudflare Workers, Workflows, and Durable Objects, with real‑time status updates.
+                Workflow دورة الطلب (التحقق → حجز المخزون → انتظار الدفع → إنهاء الطلب)
+                مبني على Cloudflare Workers و Workflows و Durable Objects، مع تحديثات لحظية للحالة.
               </p>
               <p className="text-[11px] text-neutral-500 dark:text-neutral-400 mb-3">
-                Tech: TypeScript, Cloudflare Workers, Workflows, Durable Objects, WebSockets
+                التقنية: TypeScript, Cloudflare Workers, Workflows, Durable Objects, WebSockets
               </p>
               <div className="flex flex-wrap gap-2">
                 <a
@@ -140,37 +140,37 @@ function App() {
                   rel="noreferrer"
                   className="text-xs px-3 py-1.5 rounded-lg bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-800 dark:text-neutral-100 transition"
                 >
-                  GitHub Repo
+                  الكود على GitHub
                 </a>
                 <button
                   onClick={() => setShowWorkflowDemo(true)}
                   className="text-xs px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white transition"
                 >
-                  Open Workflow Demo
+                  فتح عرض الـ Workflow
                 </button>
               </div>
             </article>
 
-            {/* Project placeholder */}
+            {/* Project: Flutter App */}
             <article className="bg-white/80 dark:bg-neutral-900/80 border border-neutral-200/60 dark:border-neutral-800 rounded-xl p-5 shadow-sm">
               <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-50 mb-1">
-                Custom PHP E‑commerce Dashboard
+                تطبيق Flutter للمتجر
               </h3>
               <p className="text-xs text-neutral-600 dark:text-neutral-300 mb-3">
-                Admin panel for managing products, orders, and customers with PHP, MySQL, and Bootstrap,
-                including variant management and CMS features.
+                تطبيق موبايل متكامل لعرض المنتجات، إضافة للسلة، وتتبع الطلبات،
+                مع ربط بواجهة برمجية (API) لمتجر PHP/MySQL.
               </p>
               <p className="text-[11px] text-neutral-500 dark:text-neutral-400 mb-3">
-                Tech: PHP, MySQL, Bootstrap, Admin CMS
+                التقنية: Flutter, Dart, REST API, HTTP
               </p>
               <div className="flex flex-wrap gap-2">
                 <a
-                  href="https://github.com/..."
+                  href="https://github.com/Mohammedey100"
                   target="_blank"
                   rel="noreferrer"
                   className="text-xs px-3 py-1.5 rounded-lg bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-800 dark:text-neutral-100 transition"
                 >
-                  GitHub Repo
+                  الكود على GitHub
                 </a>
               </div>
             </article>
@@ -183,12 +183,21 @@ function App() {
           className="px-6 pb-10 max-w-5xl mx-auto border-t border-neutral-200/60 dark:border-neutral-800 pt-8"
         >
           <h2 className="text-sm font-semibold text-neutral-900 dark:text-neutral-50 mb-3">
-            Get in touch
+            تواصل معي
           </h2>
           <p className="text-xs text-neutral-600 dark:text-neutral-300 mb-3">
-            Available for freelance work and collaborations.
+            متاح للعمل الحر والتعاون في مشاريع جديدة.
           </p>
           <ul className="text-xs text-neutral-600 dark:text-neutral-300 space-y-1">
+            <li>
+              <span className="font-medium">البريد:</span>{" "}
+              <a
+                href="mailto:mohammedey100@email.com"
+                className="text-emerald-600 dark:text-emerald-400 hover:underline"
+              >
+                mohammedey100@email.com
+              </a>
+            </li>
             <li>
               <span className="font-medium">GitHub:</span>{" "}
               <a
@@ -208,13 +217,13 @@ function App() {
           <section className="border-t border-neutral-200/60 dark:border-neutral-800 pt-6 pb-10">
             <div className="px-6 mb-4 flex items-center justify-between max-w-5xl mx-auto">
               <h2 className="text-sm font-semibold text-neutral-900 dark:text-neutral-50">
-                Workflow Demo
+                عرض الـ Workflow
               </h2>
               <button
                 onClick={() => setShowWorkflowDemo(false)}
                 className="text-[11px] text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200"
               >
-                Close
+                إغلاق
               </button>
             </div>
 
