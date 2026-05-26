@@ -87,10 +87,16 @@ function App() {
           </div>
 
           <nav className="flex items-center gap-4 text-xs font-medium text-neutral-600 dark:text-neutral-400">
-            <a href="#projects" className="hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors">
+            <a
+              href="#projects"
+              className="hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors"
+            >
               المشاريع
             </a>
-            <a href="#contact" className="hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors">
+            <a
+              href="#contact"
+              className="hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors"
+            >
               تواصل معي
             </a>
             <a
@@ -115,7 +121,8 @@ function App() {
             </h2>
             <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-300 max-w-2xl">
               مطور ويب مركز على PHP و MySQL و WebRTC و Cloudflare Workers،
-              ببني منصات تجارة إلكترونية مخصصة، لوحات تحكم، وتجارب لحظية (Real‑Time).
+              ببني منصات تجارة إلكترونية مخصصة، لوحات تحكم، وتجارب لحظية
+              (Real‑Time).
             </p>
           </div>
 
@@ -127,13 +134,16 @@ function App() {
                 متجر إلكتروني / Workflows Starter
               </h3>
               <p className="text-xs text-neutral-600 dark:text-neutral-300 mb-3">
-                Workflow دورة الطلب (التحقق → حجز المخزون → انتظار الدفع → إنهاء الطلب)
-                مبني على Cloudflare Workers و Workflows و Durable Objects، مع تحديثات لحظية للحالة.
+                Workflow دورة الطلب (التحقق → حجز المخزون → انتظار الدفع →
+                إنهاء الطلب) مبني على Cloudflare Workers و Workflows و Durable
+                Objects، مع تحديثات لحظية للحالة.
               </p>
               <p className="text-[11px] text-neutral-500 dark:text-neutral-400 mb-3">
-                التقنية: TypeScript, Cloudflare Workers, Workflows, Durable Objects, WebSockets
+                التقنية: TypeScript, Cloudflare Workers, Workflows, Durable
+                Objects, WebSockets
               </p>
-              <div className="flex flex-wrap gap-2">
+
+              <div className="flex flex-wrap gap-2 mb-3">
                 <a
                   href="https://github.com/Mohammedey100/workflows-starter-template"
                   target="_blank"
@@ -148,6 +158,20 @@ function App() {
                 >
                   فتح عرض الـ Workflow
                 </button>
+              </div>
+
+              {/* فيديو الديمو للمتجر (يوتيوب) */}
+              <div className="rounded-lg overflow-hidden border border-neutral-200/60 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/aWMRZKdPmgU"
+                    title="سكريبت متجر الكترونى لبيع العبايات ب ال بي اتش بي واتش تى ام ال"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
               </div>
             </article>
 
@@ -195,7 +219,8 @@ function App() {
                 href="mailto:mohammedey100@email.com"
                 className="text-emerald-600 dark:text-emerald-400 hover:underline"
               >
-                mohammedey100@email.com
+                [mohammedey100@email.com]
+                (mailto:mohammedey100@email.com)
               </a>
             </li>
             <li>
