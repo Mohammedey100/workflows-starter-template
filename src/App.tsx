@@ -99,7 +99,7 @@ function App() {
             >
               تواصل معي
             </a>
-            {/* زر متجر الديمو في الهيدر (اختياري) */}
+            {/* زر متجر الديمو في الهيدر */}
             <a
               href="https://market.essentialsco1.shop"
               target="_blank"
@@ -163,7 +163,7 @@ function App() {
                 </a>
 
                 <a
-                  href="https://market.essentialsco1.sho"
+                  href="https://market.essentialsco1.shop"
                   target="_blank"
                   rel="noreferrer"
                   className="text-xs px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-900/40 dark:text-emerald-300 dark:hover:bg-emerald-900/70 border border-emerald-200/60 dark:border-emerald-800 transition"
