@@ -99,6 +99,15 @@ function App() {
             >
               تواصل معي
             </a>
+            {/* زر متجر الديمو في الهيدر (اختياري) */}
+            <a
+              href="https://market.essentialsco1.sho"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-block text-xs font-medium text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors"
+            >
+              متجر ديمو →
+            </a>
             <a
               href="https://developers.cloudflare.com/workflows"
               target="_blank"
@@ -152,6 +161,16 @@ function App() {
                 >
                   الكود على GitHub
                 </a>
+
+                <a
+                  href="https://market.essentialsco1.sho"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xs px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-900/40 dark:text-emerald-300 dark:hover:bg-emerald-900/70 border border-emerald-200/60 dark:border-emerald-800 transition"
+                >
+                  متجر ديمو مباشر
+                </a>
+
                 <button
                   onClick={() => setShowWorkflowDemo(true)}
                   className="text-xs px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white transition"
@@ -219,8 +238,7 @@ function App() {
                 href="mailto:mohammedey100@email.com"
                 className="text-emerald-600 dark:text-emerald-400 hover:underline"
               >
-                [mohammedey100@email.com]
-                (mailto:mohammedey100@email.com)
+                mohammedey100@email.com
               </a>
             </li>
             <li>
