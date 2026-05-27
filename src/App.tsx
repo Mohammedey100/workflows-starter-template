@@ -101,7 +101,7 @@ function App() {
             </a>
             {/* زر متجر الديمو في الهيدر (اختياري) */}
             <a
-              href="https://market.essentialsco1.sho"
+              href="https://market.essentialsco1.shop"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-block text-xs font-medium text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors"
